@@ -188,21 +188,27 @@ article{
 
 .aside {
     margin-top: 32px;
-    float: right;
-    width: 100px;
-    background: red;
+    float: right;        
+}
+.widget-subscription {
+    
 }
 
-.comment{
-  margin-top: 10px;
-  //padding: 10px 0px 20px;
-  float: right;
-  background: #768FA5;
-  position: relative;
-  padding: 0 5px;
-  font-size: 12px;
-  line-height: 16px;
-  border-radius: 20px;    
+.widget {
+    margin: 10px 0px 20px;
+    width: 240px;
+}
+
+.comment {
+    margin-top: 10px;
+    //padding: 10px 0px 20px;
+    float: right;
+    background: #768FA5;
+    position: relative;
+    padding: 0 5px;
+    font-size: 12px;
+    line-height: 16px;
+    border-radius: 20px;
 }
 .comment-icon{    
   text-decoration: none;
