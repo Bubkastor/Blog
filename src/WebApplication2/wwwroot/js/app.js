@@ -1,166 +1,19 @@
-
-
-function readJSON(file) {
-    var request = new XMLHttpRequest();
-    request.open('GET', file, false);
-    request.send(null);
-    if (request.status == 200)
-        return request.responseText;
+function readJSON(a) { var b = new XMLHttpRequest; b.open("GET", a, !1); b.send(null); if (200 == b.status) return b.responseText } window.onload = function () { var a = readJSON("json/blogs.json"), a = JSON.parse(a), b = document.getElementById("content"); a.forEach(function (a) { b.appendChild(createItem(a)) }, this) }; function createItem(a) { var b = imageDiv = footerItem = document.createElement("div"); b.className = "item"; b.appendChild(getImageDiv(a)); b.appendChild(getAcricle(a)); b.appendChild(getFooter(a)); return b }
+function getAcricle(a) { return parseArticle(a.article) }
+function parseArticle(a) {
+    var b = RegExp(/'.+?'\(.+?\)/g), e = RegExp(/'.+?'/g), d = RegExp(/\(.+?\)/g), k = document.createElement("article"); a = a.split(/\t/g); for (var c = 0; c < a.length; c++) {
+        for (var f = a[c], l = f.split(b), n = f.match(e), f = f.match(d), m = document.createElement("p"), g = 0; g < l.length; g++) {
+            var h = document.createElement("span"); h.innerText = l[g]; m.appendChild(h); n && n.length > g && f.length > g && (h = document.createElement("a"), h.title = n[g].replace(/'/g, ""), h.innerHTML = n[g].replace(/'/g, ""), h.href = f[g].replace(/\(|\)/,
+                ""), m.appendChild(h))
+        } k.appendChild(m)
+    } return k
+}
+function getFooter(a) {
+    var b = document.createElement("div"); b.classList = "footer-item"; var e = document.createElement("div"); e.classList = "tags"; var d = document.createElement("span"); d.classList = "tags-icon"; e.appendChild(d); for (var k = a.tags, c = 0; c < k.length; c++) { var f = k[c], d = document.createElement("a"); d.href = f.url; d.innerText = f.name; var f = c + 1 < k.length, l = document.createTextNode(", "); e.appendChild(d); f && e.appendChild(l) } b.appendChild(e); e = document.createElement("div"); e.classList = "comment"; d = document.createElement("a");
+    d.classList = "comment-icon"; d.href = a.comment_url; d.innerText = "\u041a\u043e\u043c\u0435\u043d\u0442\u0430\u0440\u0438\u0435\u0432: " + a.comment_count; e.appendChild(d); b.appendChild(e); return b
+}
+function getImageDiv(a) {
+    var b = document.createElement("header"), e = document.createElement("img"), d = document.createElement("h2"), k = document.createElement("a"), c = k.cloneNode(), f = k.cloneNode(), l = document.createElement("div"), n = document.createElement("time"), m = document.createElement("span"), g = m.cloneNode(), h = document.createElement("div"); k.classList = "link"; d.classList = "title"; l.classList = "info-created"; m.classList = "author-icon"; g.classList = "tag-icon"; h.className = "image"; k.href = a.url; e.src = a.img; e.alt = a.img_alt;
+    f.href = a.url; f.innerHTML = a.title; n.innerHTML = a.data; c.href = a.author_url; c.title = "\u0410\u0432\u0442\u043e\u0440: " + a.author; c.innerHTML = a.author; m.appendChild(c); for (c = 0; c < a.tag.length; c++) { var q = a.tag[c], p = document.createElement("a"); p.href = q.url; p.innerHTML = q.name; g.appendChild(p); q = a.tag.length > c + 1; p = document.createTextNode(", "); q && g.appendChild(p) } d.appendChild(f); b.appendChild(d); l.appendChild(n); l.appendChild(m); l.appendChild(g); b.appendChild(l); h.appendChild(k); h.appendChild(e); h.appendChild(b);
+    return h
 };
-
-window.onload = function(){
-    var temp = readJSON("json/blogs.json");    
-    var arr = JSON.parse(temp);
-    var main = document.getElementById("content");
-    arr.forEach(function(item) {
-        main.appendChild(createItem(item));
-    }, this);
-    
-    
-}; 
-
-function createItem(item){
-    var div = imageDiv = footerItem = document.createElement("div");        
-    div.className = "item";    
-    div.appendChild(getImageDiv(item));
-    div.appendChild(getAcricle(item));
-    div.appendChild(getFooter(item));
-    return div;
-}
-
-function getAcricle(item){
-    return parseArticle(item.article);    
-}
-
-function parseArticle(item){
-    var textSplit = RegExp(/'.+?'\(.+?\)/g);        
-    var title = RegExp(/'.+?'/g);
-    var link = RegExp(/\(.+?\)/g);
-    var article = document.createElement("article");        
-    var items = item.split(/\t/g);    
-    for(var i = 0; i< items.length; i++){
-        var elem = items[i];                    
-        
-        var textArray = elem.split(textSplit);        
-        var titles = elem.match(title);
-        var links = elem.match(link);
-
-        var p = document.createElement("p");  
-                    
-        for(var j = 0; j < textArray.length; j++){
-            var span = document.createElement("span");    
-            span.innerText = textArray[j];
-            p.appendChild(span);
-            if (titles && titles.length > j && links.length > j )  {
-                var a = document.createElement("a");
-                a.title = titles[j].replace(/'/g,'');
-                a.innerHTML = titles[j].replace(/'/g,'');
-                a.href = links[j].replace(/\(|\)/, '');
-                p.appendChild(a);
-            }                        
-        }
-        
-        article.appendChild(p);
-    }    
-    return article;
-
-
-}
-
-function getFooter(item){
-    var divFooter = document.createElement("div");
-    divFooter.classList = "footer-item";
-    var tags = document.createElement("div");
-    tags.classList = "tags";
-
-    var span = document.createElement("span");
-    span.classList = "tags-icon"
-
-    tags.appendChild(span);
-
-    var arrayTags = item.tags;
-    for(var i  = 0; i < arrayTags.length; i++){
-        var elem = arrayTags[i];
-        var a = document.createElement("a");
-        a.href = elem.url;
-        
-        a.innerText = elem.name;
-        var isNotLastElem = (i + 1) < arrayTags.length;
-        var separator = document.createTextNode(", ");
-        tags.appendChild(a);
-        if(isNotLastElem)
-            tags.appendChild(separator);
-    }
-    divFooter.appendChild(tags);
-    var comment = document.createElement("div");
-    comment.classList = "comment";
-    var a = document.createElement("a");
-    a.classList = "comment-icon";
-    a.href = item.comment_url;
-    a.innerText = "Коментариев: " + item.comment_count;
-    comment.appendChild(a);
-    divFooter.appendChild(comment);
-    return divFooter;
-}
-
-function getImageDiv(elem){
-    var header = document.createElement("header");
-    var img = document.createElement("img");
-    var h2 = document.createElement("h2");
-    var a = document.createElement("a");
-    var a_span_auth =  a.cloneNode()
-    var  a_h2 = a.cloneNode();
-
-    var div_info_created  = document.createElement("div");    
-    var time = document.createElement("time");
-    var span_auth = document.createElement("span");    
-    var span_tag =span_auth.cloneNode();
-    var imageDiv = document.createElement("div");    
-    
-    a.classList = "link";
-    h2.classList = "title";
-    div_info_created.classList = "info-created";
-    span_auth.classList = "author-icon";
-    span_tag.classList = "tag-icon";
-    imageDiv.className = "image";
-
-    a.href = elem.url;    
-    img.src = elem.img;
-    img.alt = elem.img_alt;    
-    a_h2.href = elem.url;
-    a_h2.innerHTML  = elem.title;
-    time.innerHTML = elem.data;   
-    a_span_auth.href = elem.author_url;
-    a_span_auth.title = "Автор: " + elem.author ;
-    a_span_auth.innerHTML = elem.author;
-
-    span_auth.appendChild(a_span_auth);
-
-    for(var i = 0; i < elem.tag.length; i++){
-        var tag = elem.tag[i];
-        var a_span_tag = document.createElement("a");
-        a_span_tag.href = tag.url;            
-        
-        a_span_tag.innerHTML = tag.name;
-        span_tag.appendChild(a_span_tag);
-        var isNotLastElem = elem.tag.length > i + 1;        
-        var separator = document.createTextNode(", ");
-        if (isNotLastElem)
-            span_tag.appendChild(separator);
-        
-    }
-
-    h2.appendChild(a_h2);
-    header.appendChild(h2);
-      
- 
-    div_info_created.appendChild(time);
-    div_info_created.appendChild(span_auth);
-    div_info_created.appendChild(span_tag);
-    header.appendChild(div_info_created);
-    imageDiv.appendChild(a);
-    imageDiv.appendChild(img);
-    imageDiv.appendChild(header);
-    return imageDiv;
-}
-
