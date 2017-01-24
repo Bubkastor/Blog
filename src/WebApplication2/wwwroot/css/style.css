@@ -287,21 +287,85 @@ footer {
   bottom: 0px;
   left: 0px;
   width: 100%;
-  min-width: 980px;
   min-height: 150px;
   color: white; }
+  footer .conteiner {
+    margin: 0 auto;
+    width: 980px; }
 
 .footer-menu {
   display: flex;
+  padding-top: 20px;
   height: 100%;
   background-image: radial-gradient(#1a4988, #013c7b); }
+  .footer-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 30px; }
+    .footer-menu ul li {
+      font: 12px/18px Tahoma, Arial, sans-serif;
+      line-height: 22px; }
+      .footer-menu ul li a {
+        text-decoration: underline;
+        font-size: 11px;
+        color: #a8c5ff;
+        line-height: 16px; }
+  .footer-menu .icon {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .footer-menu .contact {
+    margin-top: 10px;
+    color: #a8c5ff; }
+    .footer-menu .contact li {
+      position: relative;
+      padding-left: 35px;
+      margin-bottom: 20px; }
+  .footer-menu .phone {
+    background: url(../img/icons.png) no-repeat -200px -50px; }
+  .footer-menu .email {
+    background: url(../img/icons.png) no-repeat -150px -50px; }
+  .footer-menu .partner {
+    background: url(../img/icons.png) no-repeat -200px 0; }
+  .footer-menu .tel {
+    padding: 0;
+    font-size: 18px;
+    color: #FFF;
+    line-height: 24px; }
 
 .footer-info {
   display: flex;
-  background: url("../img/footer-bg.png"); }
+  background: url("../img/footer-bg.png");
+  padding: 20px; }
+  .footer-info .rightside {
+    float: right;
+    margin-right: 20px; }
 
 .colum {
-  float: left; }
+  float: left;
+  width: 220px;
+  margin-left: 20px; }
+
+.footer-copy {
+  padding-top: 5px;
+  font-size: 11px;
+  color: #4858a8; }
+
+.social-button a {
+  margin: 5px 8px 0 0; }
+
+.colum_title {
+  font-family: "Franklin Gothic Book", sans-serif;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  margin-bottom: 8px; }
 
 .colum_list ul {
   list-style: none; }
@@ -337,7 +401,14 @@ footer {
   float: right; }
 
 .footer-win-text {
-  float: right; }
+  float: right;
+  margin: 12px 15px 0 0;
+  font-size: 11px;
+  line-height: 17px;
+  text-align: right;
+  color: #3665aa; }
+  .footer-win-text span {
+    color: #81afe2; }
 
 .footer-win-img {
   float: right;
