@@ -40,6 +40,39 @@ header {
     .head-contact {
         margin-left: 70px;
         font-size: 11px;
+        position: relative;
+
+        &:hover {
+
+            .head-contact_max {
+                height: 250px;
+                visibility: visible;
+                opacity: 1;
+                font-size: 13px;
+
+                & > .conteiner {
+                    width: 190px;
+                    margin: 10px 15px;
+                }
+
+                p {
+                    margin: 0;
+                    padding: 8px 0 8px 0;
+                    color: #646464;
+                    line-height: 24px;
+                    border-top: 1px solid #ebecf0;
+                }
+
+                span {
+                    color: #afb2c1;
+                }
+
+                a {
+                    font-size: 13px;
+                    font-weight: bold;
+                }
+            }
+        }
 
         a {
             font-weight: bold;
@@ -48,14 +81,22 @@ header {
             text-decoration: none;
         }
 
-        span {
+        & > span {
             border-bottom: 1px dashed #b5c1cd;
+        }
+
+        .head-contact_max {
+            visibility: hidden;
+            position: absolute;
+            top: 30px;
+            left: -30px;
+            opacity: 0;
+            background: linear-gradient(to bottom, #fbfbfb 0%,#ffffff 100%);
+            z-index: 2;
+            -webkit-transition: 0.25s linear opacity;
         }
     }
 
-    .head-contact_max {
-        display: none;
-    }
 
     .head-catalog {
         margin-left: 75px;
@@ -209,9 +250,9 @@ header {
                             padding: 10px 0;
 
                             a {
-                                padding:0;
-                                position:relative;
-                                display:inline-block;
+                                padding: 0;
+                                position: relative;
+                                display: inline-block;
                                 font-size: 14px;
                                 font-family: 'Tahoma', sans-serif;
                                 line-height: 16px;
@@ -299,29 +340,36 @@ header {
     background: url(../img/icons-menu_new.png) no-repeat 0 0;
     float: left;
 }
+
 .tl-hotel::before {
-    @extend .icon;   
+    @extend .icon;
 }
+
 .tl-reputation::before {
     @extend .icon;
     background-position: 0 -408px;
 }
+
 .tl-express::before {
     @extend .icon;
     background-position: 0 -442px;
 }
+
 .tl-webpms::before {
     @extend .icon;
     background-position: 0 -370px;
 }
+
 .tl-channel-manager::before {
     @extend .icon;
     background-position: 0 -30px;
 }
+
 .tl-site::before {
     @extend .icon;
     background-position: 0 -60px;
 }
+
 .tl-start::before {
     @extend .icon;
     background-position: 0 -90px;
@@ -368,7 +416,7 @@ header {
 }
 
 .reputation::before {
-    @extend .icon;  
+    @extend .icon;
     background-position: 0 -374px;
 }
 
@@ -466,50 +514,51 @@ main {
     margin-top: 32px;
     width: 733px;
     float: left;
-    &>.item {
-    margin-bottom: 20px;
-    padding: 10px 15px 20px;
 
-    .image {
-        position: relative;
-        width: 694px;
-        max-width: 100%;
+    & > .item {
         margin-bottom: 20px;
+        padding: 10px 15px 20px;
 
-        .link {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-        }
+        .image {
+            position: relative;
+            width: 694px;
+            max-width: 100%;
+            margin-bottom: 20px;
 
-        header {
-            position: absolute;
-            width: 100%;
-            bottom: 0;
-            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.33) 0%, rgba(0, 0, 0, 0.94) 100%);
-            color: white;
-        }
-
-        .info-created {
-            margin: 0 0 12px 30px;
-            color: #989898;
-            font-size: 12px;
-
-            > span {
-                margin-left: 20px;
+            .link {
+                position: absolute;
+                width: 100%;
+                height: 100%;
             }
 
-            a {
-                text-decoration: none;
-                color: #989898;
+            header {
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+                background: linear-gradient(to bottom, rgba(0, 0, 0, 0.33) 0%, rgba(0, 0, 0, 0.94) 100%);
+                color: white;
+            }
 
-                &:hover {
-                    color: white;
+            .info-created {
+                margin: 0 0 12px 30px;
+                color: #989898;
+                font-size: 12px;
+
+                > span {
+                    margin-left: 20px;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: #989898;
+
+                    &:hover {
+                        color: white;
+                    }
                 }
             }
         }
     }
-}
 }
 
 .author-icon {

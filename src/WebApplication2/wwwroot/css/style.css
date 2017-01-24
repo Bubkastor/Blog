@@ -44,16 +44,43 @@ header {
     margin-left: 65px; }
   header .head-contact {
     margin-left: 70px;
-    font-size: 11px; }
+    font-size: 11px;
+    position: relative; }
+    header .head-contact:hover .head-contact_max {
+      height: 250px;
+      visibility: visible;
+      opacity: 1;
+      font-size: 13px; }
+      header .head-contact:hover .head-contact_max > .conteiner {
+        width: 190px;
+        margin: 10px 15px; }
+      header .head-contact:hover .head-contact_max p {
+        margin: 0;
+        padding: 8px 0 8px 0;
+        color: #646464;
+        line-height: 24px;
+        border-top: 1px solid #ebecf0; }
+      header .head-contact:hover .head-contact_max span {
+        color: #afb2c1; }
+      header .head-contact:hover .head-contact_max a {
+        font-size: 13px;
+        font-weight: bold; }
     header .head-contact a {
       font-weight: bold;
       font-size: 16px;
       color: #343434;
       text-decoration: none; }
-    header .head-contact span {
+    header .head-contact > span {
       border-bottom: 1px dashed #b5c1cd; }
-  header .head-contact_max {
-    display: none; }
+    header .head-contact .head-contact_max {
+      visibility: hidden;
+      position: absolute;
+      top: 30px;
+      left: -30px;
+      opacity: 0;
+      background: linear-gradient(to bottom, #fbfbfb 0%, #ffffff 100%);
+      z-index: 2;
+      -webkit-transition: 0.25s linear opacity; }
   header .head-catalog {
     margin-left: 75px; }
     header .head-catalog a {
