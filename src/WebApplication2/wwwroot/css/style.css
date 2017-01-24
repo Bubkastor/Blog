@@ -131,13 +131,67 @@ header {
       margin-bottom: 11px;
       padding: 0 1px;
       z-index: auto; }
+      .navigation-menu ul li:hover > a {
+        border-bottom: 3px solid #B31D27;
+        background-color: #fff;
+        background-image: linear-gradient(to bottom, #f4f4f4, #ffffff);
+        background-repeat: repeat-x; }
       .navigation-menu ul li:hover .dropmenu {
         padding: 15px;
         border: 1px solid #babdc9;
         visibility: visible;
         opacity: 1;
-        left: 0;
-        font-size: 14px; }
+        left: 0; }
+        .navigation-menu ul li:hover .dropmenu.large {
+          width: 920px; }
+        .navigation-menu ul li:hover .dropmenu .colum {
+          float: left;
+          width: 285px;
+          margin: 0 20px 5px 0; }
+          .navigation-menu ul li:hover .dropmenu .colum .title {
+            padding: 0;
+            font-family: Tahoma, sans-serif;
+            font-size: 18px;
+            border-bottom: 1px solid #f1f2f4;
+            color: #354f71;
+            text-align: left;
+            margin-left: 9px;
+            padding-bottom: 15px;
+            margin-bottom: 10px; }
+          .navigation-menu ul li:hover .dropmenu .colum.all-products {
+            margin-top: -30px;
+            margin-left: 29px;
+            width: 550px;
+            text-align: left;
+            color: #354f71;
+            border-top: 1px solid #f1f2f4;
+            padding: 10px 0; }
+            .navigation-menu ul li:hover .dropmenu .colum.all-products a {
+              padding: 0;
+              position: relative;
+              display: inline-block;
+              font-size: 14px;
+              font-family: 'Tahoma', sans-serif;
+              line-height: 16px;
+              background-color: transparent; }
+              .navigation-menu ul li:hover .dropmenu .colum.all-products a:before {
+                content: '';
+                display: inline-block;
+                position: absolute;
+                border-bottom: 1px solid #354f71;
+                width: 100%;
+                height: 100%;
+                bottom: -1px; }
+          .navigation-menu ul li:hover .dropmenu .colum a {
+            font-size: 11px;
+            white-space: nowrap;
+            color: #8a9bb2; }
+            .navigation-menu ul li:hover .dropmenu .colum a span {
+              font-size: 14px;
+              line-height: 14px;
+              display: block;
+              white-space: nowrap;
+              color: #354f71; }
         .navigation-menu ul li:hover .dropmenu a {
           padding: 9px 10px;
           text-decoration: none;
@@ -155,8 +209,6 @@ header {
         opacity: 0;
         top: 32px;
         left: 0;
-        width: auto;
-        height: auto;
         -webkit-transition: 0.25s linear opacity;
         z-index: 100;
         background-color: white; }
@@ -168,11 +220,60 @@ header {
         border-bottom: 3px solid #afb2c1;
         background-image: linear-gradient(to bottom, #f4f4f4, #edeeee);
         background-repeat: repeat-x; }
-        .navigation-menu ul li > a:hover {
-          border-bottom: 3px solid #B31D27;
-          background-color: #fff;
-          background-image: linear-gradient(to bottom, #f4f4f4, #ffffff);
-          background-repeat: repeat-x; }
+
+.icon, .tl-hotel::before, .tl-reputation::before, .tl-express::before, .tl-webpms::before, .tl-channel-manager::before, .tl-site::before, .tl-start::before, .tl-mobile::before, .tl-analytics::before, .tl-audit::before, .tl-support::before, .tl-ivisa::before, .tl-rate-shopper::before, .webpms::before, .reputation::before {
+  content: ' ';
+  width: 33px;
+  height: 30px;
+  display: block;
+  margin-right: 10px;
+  background: url(../img/icons-menu_new.png) no-repeat 0 0;
+  float: left; }
+
+.tl-reputation::before {
+  background-position: 0 -408px; }
+
+.tl-express::before {
+  background-position: 0 -442px; }
+
+.tl-webpms::before {
+  background-position: 0 -370px; }
+
+.tl-channel-manager::before {
+  background-position: 0 -30px; }
+
+.tl-site::before {
+  background-position: 0 -60px; }
+
+.tl-start::before {
+  background-position: 0 -90px; }
+
+.tl-mobile::before {
+  background-position: 0 -120px; }
+
+.tl-analytics::before {
+  background-position: 0 -150px; }
+
+.tl-audit::before {
+  background-position: 0 -180px; }
+
+.tl-support::before {
+  background-position: 0 -210px; }
+
+.tl-channel-manager::before {
+  background-position: 0 -240px; }
+
+.tl-ivisa::before {
+  background-position: 0 -270px; }
+
+.tl-rate-shopper::before {
+  background-position: 0 -304px; }
+
+.webpms::before {
+  background-position: 0 -338px; }
+
+.reputation::before {
+  background-position: 0 -374px; }
 
 .header-blog {
   position: relative;
@@ -197,7 +298,7 @@ header {
     color: #d3e1ff; }
 
 nav {
-  padding-top: 33px;
+  padding-top: 22px;
   width: 943px;
   margin: 0 auto 5px; }
   nav ul {
@@ -461,7 +562,7 @@ footer {
         font-size: 11px;
         color: #a8c5ff;
         line-height: 16px; }
-  .footer-menu .icon {
+  .footer-menu .icon, .footer-menu .tl-hotel::before, .footer-menu .tl-reputation::before, .footer-menu .tl-express::before, .footer-menu .tl-webpms::before, .footer-menu .tl-channel-manager::before, .footer-menu .tl-site::before, .footer-menu .tl-start::before, .footer-menu .tl-mobile::before, .footer-menu .tl-analytics::before, .footer-menu .tl-audit::before, .footer-menu .tl-support::before, .footer-menu .tl-ivisa::before, .footer-menu .tl-rate-shopper::before, .footer-menu .webpms::before, .footer-menu .reputation::before {
     width: 26px;
     height: 26px;
     position: absolute;
