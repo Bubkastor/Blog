@@ -21,8 +21,52 @@ body {
   margin: 0 auto;
   font-family: Tahoma, Helvetica, serif; }
 
-.head div {
-  display: inline-block; }
+header {
+  background-image: linear-gradient(to bottom, #fefefe, #eff0f0);
+  background-color: #fefefe;
+  background-repeat: repeat-x;
+  width: 100%;
+  margin-top: 32px; }
+  header .container {
+    width: 980px;
+    margin: 0 auto; }
+  header .head {
+    display: inline-flex; }
+  header .head-title {
+    margin: 0 39px 0;
+    font-family: Tahoma, 'Geneva CY', sans-serif;
+    font-size: 12px;
+    color: #2a292a;
+    line-height: 18px; }
+  header .head-logo-sk {
+    margin-top: -33px;
+    margin-left: 65px; }
+  header .head-contact {
+    margin-left: 70px;
+    font-size: 11px; }
+    header .head-contact a {
+      font-weight: bold;
+      font-size: 16px;
+      color: #343434;
+      text-decoration: none; }
+    header .head-contact span {
+      border-bottom: 1px dashed #b5c1cd; }
+  header .head-contact_max {
+    display: none; }
+  header .head-catalog {
+    margin-left: 75px; }
+    header .head-catalog a {
+      display: block;
+      width: 123px;
+      height: 21px;
+      padding: 6px 0;
+      background: url(../img/topartner.png) no-repeat 0 -80px;
+      color: #fff;
+      font-size: 13px;
+      font-family: "Franklin Gothic Book", sans-serif;
+      line-height: 18px;
+      text-decoration: none;
+      text-align: center; }
 
 .header-blog {
   position: relative;
