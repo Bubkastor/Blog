@@ -10,8 +10,8 @@
 </head>
 
 <body>
-    <header>
-        <div class="container">
+    <header class="header">
+        <div class="header-row">
             <div class="head">
                 <div class="head-logo">
                     <a href="//www.travelline.ru/?from=Blog_Verh">
@@ -29,9 +29,9 @@
                     </a>
                 </div>
                 <div class="head-contact">
-                    <div class="head-contact__min" id="contact">
+                    <div class="head-contact_min">
                         <a href="tel:88005552030">8 800 555-20-30</a>
-                        <br />Бесплатно <span>по России</span>
+                        <br />Бесплатно <span class="head-contact_dashed">по России</span>
                     </div>
                     <div class="head-contact_max">
                         <div class="conteiner">
@@ -52,35 +52,37 @@
                     </div>
                 </div>
                 <div class="head-catalog">
-                    <a target="_blank" href="//www.travelline.ru/hotels/?from=Blog_Verh" title="Каталог гостиниц">Каталог гостиниц</a>
+                    <a class="head-catalog__button" target="_blank" href="//www.travelline.ru/hotels/?from=Blog_Verh" title="Каталог гостиниц">Каталог гостиниц</a>
                 </div>
             </div>
             <div class="navigation-menu">
                 <div class="left-side">
                     <ul class="nav">
-                        <li>
-                            <a href="//www.travelline.ru/products/">Продукты и услуги</a>
+                        <li class="nav-li">
+                            <div class="nav-li_gray">
+                                <a class="nav-li-link" href="//www.travelline.ru/products/">Продукты и услуги</a>
+                            </div>
                             <div class="dropmenu large">
                                 <div class="colum">
                                     <div class="title">
                                         Управление<br />онлайн-дистрибуцией
-                                    </div>                                    
+                                    </div>
                                     <a class="tl-hotel" href="//www.travelline.ru/products/tl-hotel/">
                                         <span>TL: <b>Отель</b></span>
                                         Модуль онлайн-бронирования для сайта
-                                    </a>    
+                                    </a>
                                     <a class="tl-channel-manager" href="//www.travelline.ru/products/channel-manager/">
                                         <span>TL: <b>Channel Manager</b></span>
                                         Управление каналами продаж
-                                    </a> 
-                                    <a class="tl-webpms"href="//www.travelline.ru/products/webpms/">
+                                    </a>
+                                    <a class="tl-webpms" href="//www.travelline.ru/products/webpms/">
                                         <span>TL: <b>WebPMS </b></span>
                                         АСУ для мини-отелей и хостелов
-                                    </a> 
+                                    </a>
                                     <a class="tl-express" href="//www.travelline.ru/products/tl-express/">
                                         <span>TL: <b>Express</b></span>
                                         Конструктор гостиничного сайта
-                                    </a>                                 
+                                    </a>
                                 </div>
                                 <div class="colum">
                                     <div class="title">
@@ -101,7 +103,7 @@
                                     <a class="tl-ivisa" href="//www.travelline.ru/products/ivisa/">
                                         <span>Сервис <b>iVisa</b></span>
                                         Визовая поддержка гостей
-                                    </a> 
+                                    </a>
                                 </div>
                                 <div class="colum">
                                     <div class="title">
@@ -126,32 +128,41 @@
                                     <a class="tl-audit" href="//www.travelline.ru/products/tl-audit/">
                                         <span>Профессиональный аудит</span>
                                         Анализ ошибок вашего сайта
-                                    </a>  
-                                </div>   
+                                    </a>
+                                </div>
                                 <div class="colum all-products">
                                     <a href="http://www.travelline.ru/products/">Посмотреть все продукты</a>
                                     >
-                                </div>   
+                                </div>
                             </div>
                         </li>
-                        <li>
-                            <a href="//www.travelline.ru/portfolio/?from=Blog_Verh">Портфолио</a>
-                            <div class="dropmenu">                                
-                                <a href="//www.travelline.ru/portfolio/official-sites/?from=Blog_Verh">Эксклюзивные сайты</a>                                
+                        <li class="nav-li">
+                            <div class="nav-li_gray">
+                                <a class="nav-li-link" href="//www.travelline.ru/portfolio/?from=Blog_Verh">Портфолио</a>
+                            </div>
+                            <div class="dropmenu">
+                                <a href="//www.travelline.ru/portfolio/official-sites/?from=Blog_Verh">Эксклюзивные сайты</a>
                                 <a href="//www.travelline.ru/portfolio/tl-start/?from=Blog_Verh">Типовые сайты «TL: Старт»</a>
                                 <a href="//www.travelline.ru/portfolio/mobile-sites/?from=Blog_Verh">Мобильные сайты</a>
                                 <a href="//www.travelline.ru/portfolio/integration-examples/?from=Blog_Verh">Интеграции «TravelLine: Отеля»</a>
                                 <a href="//www.travelline.ru/portfolio/holiday-decoration/?from=Blog_Verh">Работы по сопровождению</a>
-                            </div>                            
+                            </div>
                         </li>
-                        <li>
-                            <a href="//www.travelline.ru/support//?from=Blog_Verh">Поддержка</a>
+                        <li class="nav-li">
+                            <div class="nav-li_gray">
+                                <a class="nav-li-link" href="//www.travelline.ru/support//?from=Blog_Verh">Поддержка</a>
+                            </div>
                         </li>
-                        <li class="active">
-                            <a href="/blog.travelline.ru">Блог</a>
+
+                        <li class="nav-li active">
+                            <div class="nav-li_gray">
+                                <a class="nav-li-link" href="/blog.travelline.ru">Блог</a>
+                            </div>
                         </li>
-                        <li>
-                            <a href="//www.travelline.ru/about/?from=Blog_Verh">О компании</a>
+                        <li class="nav-li">
+                            <div class="nav-li_gray">
+                                <a class="nav-li-link" href="//www.travelline.ru/about/?from=Blog_Verh">О компании</a>
+                            </div>
                             <div class="dropmenu">
                                 <a href="//www.travelline.ru/about/team/?from=Blog_Verh">Команда</a>
                                 <a href="//www.travelline.ru/about/career/?from=Blog_Verh">Работа в TravelLine</a>
@@ -166,8 +177,10 @@
                                 <a href="//www.travelline.ru/about/nohotel-projects/?from=Blog_Verh">Другие проекты</a>
                             </div>
                         </li>
-                        <li>
-                            <a href="//www.travelline.ru/contacts/?from=Blog_Verh">Контакты</a>
+                        <li class="nav-li ">
+                            <div class="nav-li_gray">
+                                <a class="nav-li-link" href="//www.travelline.ru/contacts/?from=Blog_Verh">Контакты</a>
+                            </div>
                         </li>
                     </ul>
                 </div>
