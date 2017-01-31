@@ -1,5 +1,6 @@
 @import "hgroup";
 @import "const";
+@import "color";
 
 body {
     height: 100%;
@@ -9,8 +10,8 @@ body {
 
 header {
     display: block;
-    background-image: linear-gradient(to bottom, #fefefe, #eff0f0);
-    background-color: #fefefe;
+    background-image: linear-gradient(to bottom, $header-background__color-1, $header-background__color-2);
+    background-color: $header-background__color-1;
     background-repeat: repeat-x;
     width: 100%;
     margin-top: 32px;
@@ -28,7 +29,7 @@ header {
         margin: 0 39px 0;
         font-family: Tahoma, 'Geneva CY', sans-serif;
         font-size: 12px;
-        color: #2a292a;
+        color: $head-title__color;
         line-height: 18px;
     }
 
@@ -58,13 +59,13 @@ header {
                 p {
                     margin: 0;
                     padding: 8px 0 8px 0;
-                    color: #646464;
+                    color: $head-contact_max-p__color;
                     line-height: 24px;
                     border-top: 1px solid #ebecf0;
                 }
 
                 span {
-                    color: #afb2c1;
+                    color: $head-contact_max-span__color;
                 }
 
                 a {
@@ -77,12 +78,12 @@ header {
         a {
             font-weight: bold;
             font-size: 16px;
-            color: #343434;
+            color: $head-contact-a__color;
             text-decoration: none;
         }
 
         & > span {
-            border-bottom: 1px dashed #b5c1cd;
+            border-bottom: 1px dashed $head-contact-span__border-bottom;
         }
 
         .head-contact_max {
@@ -91,7 +92,7 @@ header {
             top: 30px;
             left: -30px;
             opacity: 0;
-            background: linear-gradient(to bottom, #fbfbfb 0%,#ffffff 100%);
+            background: linear-gradient(to bottom, $head-contact_max__background-1 0%, $head-contact_max__background-2 100%);
             z-index: 2;
             -webkit-transition: 0.25s linear opacity;
         }
@@ -107,7 +108,7 @@ header {
             height: 21px;
             padding: 6px 0;
             background: url(../img/topartner.png) no-repeat 0 -80px;
-            color: #fff;
+            color: $head-catalog-a__color;
             font-size: 13px;
             font-family: "Franklin Gothic Book", sans-serif;
             line-height: 18px;
@@ -307,9 +308,6 @@ header {
                 left: 0;
                 opacity: 0;
                 top: 32px;
-                left: 0;
-                //width: auto;
-                //height: auto;
                 -webkit-transition: 0.25s linear opacity;
                 z-index: 100;
                 background-color: white;
@@ -324,8 +322,6 @@ header {
                 background-image: linear-gradient(to bottom, #f4f4f4, #edeeee);
                 background-repeat: repeat-x;
 
-                &:hover {
-                }
             }
         }
     }
@@ -424,7 +420,7 @@ header {
     position: relative;
     min-width: $minWidth;
     min-height: $minHeight;
-    background: $colorHead url($imgHeader) 50% 0 no-repeat;
+    background: $header-blog__background url($imgHeader) 50% 0 no-repeat;
     color: white;
 
     h1 {
@@ -436,17 +432,17 @@ header {
 
 .link {
     width: $minWidth;
-    margin:0 auto;
+    margin: 0 auto;
     padding-top: 10px;
     font-size: 11px;
 
     > a {
         margin-left: 20px;
-        color: #a8c5ff;
+        color: $link-a__color;
     }
 
     > span {
-        color: #d3e1ff;
+        color: $link-span__color;
     }
 }
 
@@ -496,7 +492,7 @@ nav {
 a {
     &:hover {
         text-decoration: none;
-        color: #5ca9d6;
+        color: $a__color;
     }
 }
 
@@ -541,7 +537,7 @@ main {
 
             .info-created {
                 margin: 0 0 12px 30px;
-                color: #989898;
+                color: $info-created__color;
                 font-size: 12px;
 
                 > span {
@@ -550,10 +546,9 @@ main {
 
                 a {
                     text-decoration: none;
-                    color: #989898;
 
                     &:hover {
-                        color: white;
+                        color: $info-created-a-h__color;
                     }
                 }
             }
@@ -590,7 +585,7 @@ article {
     > h2 {
         font: 20px Tahoma, Verdana, Arial, sans-serif;
         margin: 5px 0 15px 0;
-        color: #323232;
+        color: $article-h2__color;
     }
 
     span {
@@ -626,12 +621,12 @@ article {
 
 .widget {
     margin-bottom: 20px;
-    background: #eff0f2 url(../img/widget-bg.png);
+    background: $widget__background url(../img/widget-bg.png);
     font: 12px 'Tahoma', sans-serif;
 
     &-title {
         font: 17px 'Franklin Gothic', sans-serif;
-        color: #354f71;
+        color: $widget-title_color;
         margin: 0;
     }
 
@@ -645,12 +640,12 @@ article {
     }
 
     a {
-        color: #354f71;
+        color: $widget-a__color;
     }
 }
 
 .widget-subscription {
-    border: 8px solid #eff0f2;
+    border: 8px solid $widget-subscription__border;
     padding: 15px 12px 10px 12px;
 
     &__input {
@@ -659,32 +654,32 @@ article {
         border-radius: 4px;
         margin: 15px 0 0;
         padding: 0 8px;
-        box-shadow: inset 0 1px 4px 0 #eee;
+        box-shadow: inset 0 1px 4px 0 $widget-subscription-input__box-shadow;
     }
 
     &__description {
         font-size: 11px;
-        color: #768fa5;
+        color: $widget-subscription-description__color;
         font-style: italic;
         margin: 0;
         margin-top: 6px;
     }
 
     &__button {
-        background-color: #4a68ac;
-        background-image: linear-gradient(to bottom, #5574b8, #3c589d);
-        color: #fff;
+        background-color: $widget-subscription-bottom__background-color;
+        background-image: linear-gradient(to bottom, $widget-subscription-bottom__background-background-image-1, $widget-subscription-bottom__background-background-image-2);
+        color: $widget-subscription-bottom__color;
         line-height: 30px;
         width: 100%;
         text-align: center;
         border-radius: 4px;
-        border: 1px solid #6c8cd1;
+        border: 1px solid $widget-subscription-bottom__border;
         margin: 10px 0;
-        box-shadow: 0 1px 2px 0 rgba(166, 166, 166, 0.5);
+        box-shadow: 0 1px 2px 0 $widget-subscription-bottom__box-shadow;
 
         &:hover {
-            background-color: #5579c4;
-            background-image: linear-gradient(to bottom, #6488d1, #4667b6);
+            background-color: $widget-subscription-bottom-h__background-color;
+            background-image: linear-gradient(to bottom, $widget-subscription-bottom-h__background-image-1, $widget-subscription-bottom-h__background-image-2);
         }
     }
 }
@@ -708,7 +703,7 @@ article {
         height: 30px;
         border-radius: 4px;
         padding: 0 8px;
-        box-shadow: inset 0 1px 4px 0 #eee;
+        box-shadow: inset 0 1px 4px 0 $widget-search-form-input__box-shadow;
     }
 
     &__button {
@@ -727,7 +722,7 @@ article {
     &__data {
         color: #fff;
         font-size: 11px;
-        background: #718f9f;
+        background: $widget-popular-record-data__background;
         padding: 3px 4px;
         font-weight: normal;
     }
@@ -742,7 +737,7 @@ article {
 .comment {
     margin-top: 10px;
     float: right;
-    background: #768FA5;
+    background: $comment__background;
     position: relative;
     padding: 0 5px;
     font-size: 12px;
@@ -752,12 +747,12 @@ article {
 
 .comment-icon {
     text-decoration: none;
-    color: white;
+    color: $comment-icon__color;
 
     &:after {
         content: '';
         display: block;
-        border-left: 9px solid #768FA5;
+        border-left: 9px solid $comment-icon__border-left;
         border-bottom: 6px solid transparent;
         position: absolute;
         bottom: -4px;
@@ -770,8 +765,8 @@ article {
     a {
         text-decoration: none;
         font: 36px 'Franklin Gothic Book', sans-serif;
-        color: white;
-        border-bottom: 1px #fff solid;
+        color: $title-a__color;
+        border-bottom: 1px $title-a__border-bottom solid;
 
         &:hover {
             border-bottom: none;
@@ -786,7 +781,7 @@ footer {
     left: 0;
     width: 100%;
     min-height: 150px;
-    color: white;
+    color: $footer__color;
 
     .conteiner {
         margin: 0 auto;
@@ -798,7 +793,7 @@ footer {
     display: flex;
     padding-top: 20px;
     height: 100%;
-    background-image: radial-gradient(#1a4988, #013c7b);
+    background-image: radial-gradient($footer-menu-background-image__color-1, $footer-menu-background-image__color-2);
 
 
     ul {
@@ -814,7 +809,7 @@ footer {
             a {
                 text-decoration: underline;
                 font-size: 11px;
-                color: #a8c5ff;
+                color: $footer-menu-a__color;
                 line-height: 16px;
             }
         }
@@ -830,7 +825,7 @@ footer {
 
     .contact {
         margin-top: 10px;
-        color: #a8c5ff;
+        color: $footer-menu-contact__color;
 
         li {
             position: relative;
@@ -854,7 +849,7 @@ footer {
     .tel {
         padding: 0;
         font-size: 18px;
-        color: #FFF;
+        color: $footer-menu-tel__color;
         line-height: 24px;
     }
 }
@@ -879,7 +874,7 @@ footer {
 .footer-copy {
     padding-top: 5px;
     font-size: 11px;
-    color: #4858a8;
+    color: $footer-copy;
 }
 
 .social-button {
@@ -891,7 +886,7 @@ footer {
 .colum_title {
     font-family: "Franklin Gothic Book", sans-serif;
     font-size: 18px;
-    color: #fff;
+    color: $colum_title__color;
     text-decoration: none;
     display: inline-block;
     *display: inline;
@@ -905,7 +900,7 @@ footer {
     }
 
     a {
-        color: white;
+        color: $colum_list-a__color;
     }
 }
 
@@ -957,10 +952,10 @@ footer {
     font-size: 11px;
     line-height: 17px;
     text-align: right;
-    color: #3665aa;
+    color: $footer-win-text__color;
 
     span {
-        color: #81afe2;
+        color: $footer-win-text-span__color;
     }
 }
 
@@ -972,5 +967,5 @@ footer {
 }
 
 input {
-    border: 1px solid #ccc;
+    border: 1px solid $input__border;
 }
