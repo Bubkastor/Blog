@@ -315,7 +315,7 @@ header {
 
 .link {
   width: 980px;
-  margin: 0px auto;
+  margin: 0 auto;
   padding-top: 10px;
   font-size: 11px; }
   .link > a {
@@ -421,7 +421,7 @@ article {
   font-size: 14px; }
   article > h2 {
     font: 20px Tahoma, Verdana, Arial, sans-serif;
-    margin: 5px 0px 15px 0px;
+    margin: 5px 0 15px 0;
     color: #323232; }
   article span {
     font-weight: 400;
@@ -487,7 +487,7 @@ article {
     border-radius: 4px;
     border: 1px solid #6c8cd1;
     margin: 10px 0;
-    box-shadow: 0 1px 2px 0px rgba(166, 166, 166, 0.5); }
+    box-shadow: 0 1px 2px 0 rgba(166, 166, 166, 0.5); }
     .widget-subscription__button:hover {
       background-color: #5579c4;
       background-image: linear-gradient(to bottom, #6488d1, #4667b6); }
@@ -562,8 +562,8 @@ article {
 footer {
   position: relative;
   float: left;
-  bottom: 0px;
-  left: 0px;
+  bottom: 0;
+  left: 0;
   width: 100%;
   min-height: 150px;
   color: white; }

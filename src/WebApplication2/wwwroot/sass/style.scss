@@ -436,7 +436,7 @@ header {
 
 .link {
     width: $minWidth;
-    margin: 0px auto;
+    margin:0 auto;
     padding-top: 10px;
     font-size: 11px;
 
@@ -589,7 +589,7 @@ article {
 
     > h2 {
         font: 20px Tahoma, Verdana, Arial, sans-serif;
-        margin: 5px 0px 15px 0px;
+        margin: 5px 0 15px 0;
         color: #323232;
     }
 
@@ -680,7 +680,7 @@ article {
         border-radius: 4px;
         border: 1px solid #6c8cd1;
         margin: 10px 0;
-        box-shadow: 0 1px 2px 0px rgba(166, 166, 166, 0.5);
+        box-shadow: 0 1px 2px 0 rgba(166, 166, 166, 0.5);
 
         &:hover {
             background-color: #5579c4;
@@ -741,7 +741,6 @@ article {
 
 .comment {
     margin-top: 10px;
-    //padding: 10px 0px 20px;
     float: right;
     background: #768FA5;
     position: relative;
@@ -783,8 +782,8 @@ article {
 footer {
     position: relative;
     float: left;
-    bottom: 0px;
-    left: 0px;
+    bottom: 0;
+    left: 0;
     width: 100%;
     min-height: 150px;
     color: white;
