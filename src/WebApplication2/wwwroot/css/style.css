@@ -1,1 +1,698 @@
-h1{font-size:32px}h2{font-size:28px}h3{font-size:24px}h4{font-size:20px}h5{font-size:16px}h6{font-size:12px}body{height:100%;margin:0 auto;font-family:Tahoma, Helvetica, serif}header{display:block;background-image:linear-gradient(to bottom, #fefefe, #eff0f0);background-color:#fefefe;background-repeat:repeat-x;width:100%;margin-top:32px}header .container{width:980px;margin:0 auto}header .head{display:inline-flex}header .head-title{margin:0 39px 0;font-family:Tahoma, 'Geneva CY', sans-serif;font-size:12px;color:#2a292a;line-height:18px}header .head-logo-sk{margin-top:-33px;margin-left:65px}header .head-contact{margin-left:70px;font-size:11px;position:relative}header .head-contact:hover .head-contact_max{height:250px;visibility:visible;opacity:1;font-size:13px}header .head-contact:hover .head-contact_max>.conteiner{width:190px;margin:10px 15px}header .head-contact:hover .head-contact_max p{margin:0;padding:8px 0 8px 0;color:#646464;line-height:24px;border-top:1px solid #ebecf0}header .head-contact:hover .head-contact_max span{color:#afb2c1}header .head-contact:hover .head-contact_max a{font-size:13px;font-weight:bold}header .head-contact a{font-weight:bold;font-size:16px;color:#343434;text-decoration:none}header .head-contact>span{border-bottom:1px dashed #b5c1cd}header .head-contact .head-contact_max{visibility:hidden;position:absolute;top:30px;left:-30px;opacity:0;background:linear-gradient(to bottom, #fbfbfb 0%, #fff 100%);z-index:2;-webkit-transition:0.25s linear opacity}header .head-catalog{margin-left:75px}header .head-catalog a{display:block;width:123px;height:21px;padding:6px 0;background:url(../img/topartner.png) no-repeat 0 -80px;color:#fff;font-size:13px;font-family:"Franklin Gothic Book", sans-serif;line-height:18px;text-decoration:none;text-align:center}.navigation-menu{width:100%;display:inline-block}.navigation-menu .left-side{float:left}.navigation-menu .rigth-side{float:right;margin-top:-15px}.navigation-menu .partner{position:relative;display:inline-block;margin-top:29px;text-align:right;margin-right:30px;font-size:11px;color:#343434;line-height:17px;text-decoration:underline}.navigation-menu .partner-ico:after{position:absolute;content:' ';top:0;left:-20px;display:inline-block;width:17px;height:17px;background:url("../img/icons.png") no-repeat 0 -45px;margin-right:3px}.navigation-menu .registration{position:relative;display:inline-block;margin-top:29px;text-align:right;font-size:11px;color:#343434;line-height:17px;text-decoration:underline}.navigation-menu .registration-ico:after{position:absolute;content:' ';top:0;left:-20px;display:inline-block;width:16px;height:17px;background:url(../img/icons.png) no-repeat -156px -93px;margin:0 4px 0 0;vertical-align:bottom}.navigation-menu ul{list-style:none;padding:0}.navigation-menu ul>.active>a{border-bottom:3px solid #B31D27;background-color:#fff;background-image:linear-gradient(to bottom, #f4f4f4, #fff);background-repeat:repeat-x}.navigation-menu ul li{float:left;position:relative;margin-bottom:11px;padding:0 1px;z-index:auto}.navigation-menu ul li:hover>a{border-bottom:3px solid #B31D27;background-color:#fff;background-image:linear-gradient(to bottom, #f4f4f4, #fff);background-repeat:repeat-x}.navigation-menu ul li:hover .dropmenu{padding:15px;border:1px solid #babdc9;visibility:visible;opacity:1;left:0}.navigation-menu ul li:hover .dropmenu.large{width:920px}.navigation-menu ul li:hover .dropmenu .colum{float:left;width:285px;margin:0 20px 5px 0}.navigation-menu ul li:hover .dropmenu .colum .title{padding:0;font-family:Tahoma, sans-serif;font-size:18px;border-bottom:1px solid #f1f2f4;color:#354f71;text-align:left;margin-left:9px;padding-bottom:15px;margin-bottom:10px}.navigation-menu ul li:hover .dropmenu .colum.all-products{margin-top:-30px;margin-left:29px;width:550px;text-align:left;color:#354f71;border-top:1px solid #f1f2f4;padding:10px 0}.navigation-menu ul li:hover .dropmenu .colum.all-products a{padding:0;position:relative;display:inline-block;font-size:14px;font-family:'Tahoma', sans-serif;line-height:16px;background-color:transparent}.navigation-menu ul li:hover .dropmenu .colum.all-products a:before{content:'';display:inline-block;position:absolute;border-bottom:1px solid #354f71;width:100%;height:100%;bottom:-1px}.navigation-menu ul li:hover .dropmenu .colum a{font-size:11px;white-space:nowrap;color:#8a9bb2}.navigation-menu ul li:hover .dropmenu .colum a span{font-size:14px;line-height:14px;display:block;white-space:nowrap;color:#354f71}.navigation-menu ul li:hover .dropmenu a{padding:9px 10px;text-decoration:none;font-size:14px;line-height:14px;display:block;white-space:nowrap;color:#354f71}.navigation-menu ul li:hover .dropmenu a:hover{background-color:#f2f3f5}.navigation-menu ul li .dropmenu{visibility:hidden;position:absolute;left:0;opacity:0;top:32px;left:0;-webkit-transition:0.25s linear opacity;z-index:100;background-color:white}.navigation-menu ul li>a{padding:11px 21px 11px 23px;text-decoration:none;color:#343434;font-size:14px;border-bottom:3px solid #afb2c1;background-image:linear-gradient(to bottom, #f4f4f4, #edeeee);background-repeat:repeat-x}.icon,.tl-hotel::before,.tl-reputation::before,.tl-express::before,.tl-webpms::before,.tl-channel-manager::before,.tl-site::before,.tl-start::before,.tl-mobile::before,.tl-analytics::before,.tl-audit::before,.tl-support::before,.tl-ivisa::before,.tl-rate-shopper::before,.webpms::before,.reputation::before{content:' ';width:33px;height:30px;display:block;margin-right:10px;background:url(../img/icons-menu_new.png) no-repeat 0 0;float:left}.tl-reputation::before{background-position:0 -408px}.tl-express::before{background-position:0 -442px}.tl-webpms::before{background-position:0 -370px}.tl-channel-manager::before{background-position:0 -30px}.tl-site::before{background-position:0 -60px}.tl-start::before{background-position:0 -90px}.tl-mobile::before{background-position:0 -120px}.tl-analytics::before{background-position:0 -150px}.tl-audit::before{background-position:0 -180px}.tl-support::before{background-position:0 -210px}.tl-channel-manager::before{background-position:0 -240px}.tl-ivisa::before{background-position:0 -270px}.tl-rate-shopper::before{background-position:0 -304px}.webpms::before{background-position:0 -338px}.reputation::before{background-position:0 -374px}.header-blog{position:relative;min-width:980px;min-height:180px;background:#171e64 url("//blog.dev2.travelline.ru/wp-content/themes/travelline/ifeature/images/blog-header.jpg") 50% 0 no-repeat;color:white}.header-blog h1{width:942px;margin:21px auto 0;font:60px 'Franklin Gothic', sans-serif}.link{width:980px;margin:0px auto;padding-top:10px;font-size:11px}.link>a{margin-left:20px;color:#a8c5ff}.link>span{color:#d3e1ff}nav{padding-top:22px;width:943px;margin:0 auto 5px}nav ul{margin-left:0;padding:0;list-style:none}nav ul>li{padding-bottom:9px;line-height:20px;float:left}nav ul>li.active>a{border-top:3px solid #bd0726;font-weight:bold;border-bottom:4px solid white;background-color:white}nav ul>li>a{margin-right:4px;border-radius:4px 4px 0 0;text-decoration:none;background:#eff0f2;padding:11px 14px 11px;border:1px solid transparent;color:#555}nav ul>li>a:hover{border-top:3px solid #bd0726;border-bottom:5px solid white;background-color:white}a:hover{text-decoration:none;color:#5ca9d6}.text{font-size:11px}main{position:relative;margin:0 auto;width:980px}.content{margin-top:32px;width:733px;float:left}.content>.item{margin-bottom:20px;padding:10px 15px 20px}.content>.item .image{position:relative;width:694px;max-width:100%;margin-bottom:20px}.content>.item .image .link{position:absolute;width:100%;height:100%}.content>.item .image header{position:absolute;width:100%;bottom:0;background:linear-gradient(to bottom, rgba(0,0,0,0.33) 0%, rgba(0,0,0,0.94) 100%);color:white}.content>.item .image .info-created{margin:0 0 12px 30px;color:#989898;font-size:12px}.content>.item .image .info-created>span{margin-left:20px}.content>.item .image .info-created a{text-decoration:none;color:#989898}.content>.item .image .info-created a:hover{color:white}.author-icon:before{content:'';display:inline-block;width:17px;height:17px;background:url("../img/icons.png") no-repeat 0 -45px;margin:0 7px -4px 0}.tag-icon:before{content:'';display:inline-block;width:12px;height:13px;background:url("../img/icons.png") no-repeat -88px -103px;margin:0 7px -4px 0}article{font-family:Verdana, Arial, sans-serif;font-size:14px}article>h2{font:20px Tahoma, Verdana, Arial, sans-serif;margin:5px 0px 15px 0px;color:#323232}article span{font-weight:400;line-height:160%}.tags span{vertical-align:baseline}.tags-icon{display:inline-block;width:23px;height:13px;background:url("../img/icons.png") no-repeat -47px -103px;margin:0 7px -2px 0}.footer-item{font-size:12px}.aside{margin-top:42px;float:right;width:224px}.widget{margin-bottom:20px;background:#eff0f2 url(../img/widget-bg.png);font:12px 'Tahoma', sans-serif}.widget-title{font:17px 'Franklin Gothic', sans-serif;color:#354f71;margin:0}.widget-subscription{border:8px solid #eff0f2;padding:15px 12px 10px 12px}.widget-subscription__input{height:30px;width:166px;border-radius:4px;margin:15px 0 0;padding:0 8px;box-shadow:inset 0 1px 4px 0 #eee}.widget-subscription__description{font-size:11px;color:#768fa5;font-style:italic;margin:0;margin-top:6px}.widget-subscription__button{background-color:#4a68ac;background-image:linear-gradient(to bottom, #5574b8, #3c589d);color:#fff;line-height:30px;width:100%;text-align:center;border-radius:4px;border:1px solid #6c8cd1;margin:10px 0;box-shadow:0 1px 2px 0px rgba(166,166,166,0.5)}.widget-subscription__button:hover{background-color:#5579c4;background-image:linear-gradient(to bottom, #6488d1, #4667b6)}.widget-facebook{height:230px}.widget-search{padding:26px 20px}.widget-search-form>label{width:145px}.widget-search-form__input{width:120px;height:30px;border-radius:4px;padding:0 8px;box-shadow:inset 0 1px 4px 0 #eee}.widget-search-form__button{background:url(../img/search-button.png);width:30px;height:32px;float:right;color:transparent}.widget-popular-record{padding:26px 20px}.widget-popular-record__data{color:#fff;font-size:11px;background:#718f9f;padding:3px 4px;font-weight:normal}.widget-popular-record__title{line-height:15px;display:block;margin:10px 0}.widget-popular-record ul{padding:0}.widget-popular-record li{list-style:none;margin-bottom:20px}.widget-popular-record a{color:#354f71}.comment{margin-top:10px;float:right;background:#768FA5;position:relative;padding:0 5px;font-size:12px;line-height:16px;border-radius:20px}.comment-icon{text-decoration:none;color:white}.comment-icon:after{content:'';display:block;border-left:9px solid #768FA5;border-bottom:6px solid transparent;position:absolute;bottom:-4px}.title{padding:15px 30px}.title a{text-decoration:none;font:36px 'Franklin Gothic Book', sans-serif;color:white;border-bottom:1px #fff solid}.title a:hover{border-bottom:none}footer{position:relative;float:left;bottom:0px;left:0px;width:100%;min-height:150px;color:white}footer .conteiner{margin:0 auto;width:980px}.footer-menu{display:flex;padding-top:20px;height:100%;background-image:radial-gradient(#1a4988, #013c7b)}.footer-menu ul{margin:0;padding:0;list-style:none;margin-bottom:30px}.footer-menu ul li{font:12px/18px Tahoma, Arial, sans-serif;line-height:22px}.footer-menu ul li a{text-decoration:underline;font-size:11px;color:#a8c5ff;line-height:16px}.footer-menu .icon,.footer-menu .tl-hotel::before,.footer-menu .tl-reputation::before,.footer-menu .tl-express::before,.footer-menu .tl-webpms::before,.footer-menu .tl-channel-manager::before,.footer-menu .tl-site::before,.footer-menu .tl-start::before,.footer-menu .tl-mobile::before,.footer-menu .tl-analytics::before,.footer-menu .tl-audit::before,.footer-menu .tl-support::before,.footer-menu .tl-ivisa::before,.footer-menu .tl-rate-shopper::before,.footer-menu .webpms::before,.footer-menu .reputation::before{width:26px;height:26px;position:absolute;top:0;left:0}.footer-menu .contact{margin-top:10px;color:#a8c5ff}.footer-menu .contact li{position:relative;padding-left:35px;margin-bottom:20px}.footer-menu .phone{background:url(../img/icons.png) no-repeat -200px -50px}.footer-menu .email{background:url(../img/icons.png) no-repeat -150px -50px}.footer-menu .partner{background:url(../img/icons.png) no-repeat -200px 0}.footer-menu .tel{padding:0;font-size:18px;color:#FFF;line-height:24px}.footer-info{display:flex;background:url("../img/footer-bg.png");padding:20px}.footer-info .rightside{float:right;margin-right:20px}.colum{float:left;width:220px;margin-left:20px}.footer-copy{padding-top:5px;font-size:11px;color:#4858a8}.social-button a{margin:5px 8px 0 0}.colum_title{font-family:"Franklin Gothic Book", sans-serif;font-size:18px;color:#fff;text-decoration:none;display:inline-block;*display:inline;*zoom:1;margin-bottom:8px}.colum_list ul{list-style:none}.colum_list a{color:white}.footer-logo{background:url(../img/footer-logo.png);width:143px;height:23px}.social-button{float:left;display:inline-flex}.social-button a{width:26px;height:26px;display:block;background:url(../img/socialnetwork_new.png) no-repeat 0 0}.social-button .button-fb a{background-position:0 0}.social-button .button-vk{background-position:-68px 0}.social-button .button-youtube{background-position:-204px 0}.social-button .button-instagram{background-position:-238px 0}.social-button .button-sd{background-position:-341px 0}.logo-windows{float:right}.footer-win-text{float:right;margin:12px 15px 0 0;font-size:11px;line-height:17px;text-align:right;color:#3665aa}.footer-win-text span{color:#81afe2}.footer-win-img{float:right;background:url(../img/windows.png);width:57px;height:72px}input{border:1px solid #ccc}
+h1 {
+  font-size: 32px; }
+
+h2 {
+  font-size: 28px; }
+
+h3 {
+  font-size: 24px; }
+
+h4 {
+  font-size: 20px; }
+
+h5 {
+  font-size: 16px; }
+
+h6 {
+  font-size: 12px; }
+
+body {
+  height: 100%;
+  margin: 0 auto;
+  font-family: Tahoma, Helvetica, serif; }
+
+header {
+  display: block;
+  background-image: linear-gradient(to bottom, #fefefe, #eff0f0);
+  background-color: #fefefe;
+  background-repeat: repeat-x;
+  width: 100%;
+  margin-top: 32px; }
+  header .container {
+    width: 980px;
+    margin: 0 auto; }
+  header .head {
+    display: inline-flex; }
+  header .head-title {
+    margin: 0 39px 0;
+    font-family: Tahoma, 'Geneva CY', sans-serif;
+    font-size: 12px;
+    color: #2a292a;
+    line-height: 18px; }
+  header .head-logo-sk {
+    margin-top: -33px;
+    margin-left: 65px; }
+  header .head-contact {
+    margin-left: 70px;
+    font-size: 11px;
+    position: relative; }
+    header .head-contact:hover .head-contact_max {
+      height: 250px;
+      visibility: visible;
+      opacity: 1;
+      font-size: 13px; }
+      header .head-contact:hover .head-contact_max > .conteiner {
+        width: 190px;
+        margin: 10px 15px; }
+      header .head-contact:hover .head-contact_max p {
+        margin: 0;
+        padding: 8px 0 8px 0;
+        color: #646464;
+        line-height: 24px;
+        border-top: 1px solid #ebecf0; }
+      header .head-contact:hover .head-contact_max span {
+        color: #afb2c1; }
+      header .head-contact:hover .head-contact_max a {
+        font-size: 13px;
+        font-weight: bold; }
+    header .head-contact a {
+      font-weight: bold;
+      font-size: 16px;
+      color: #343434;
+      text-decoration: none; }
+    header .head-contact > span {
+      border-bottom: 1px dashed #b5c1cd; }
+    header .head-contact .head-contact_max {
+      visibility: hidden;
+      position: absolute;
+      top: 30px;
+      left: -30px;
+      opacity: 0;
+      background: linear-gradient(to bottom, #fbfbfb 0%, #ffffff 100%);
+      z-index: 2;
+      -webkit-transition: 0.25s linear opacity; }
+  header .head-catalog {
+    margin-left: 75px; }
+    header .head-catalog a {
+      display: block;
+      width: 123px;
+      height: 21px;
+      padding: 6px 0;
+      background: url(../img/topartner.png) no-repeat 0 -80px;
+      color: #fff;
+      font-size: 13px;
+      font-family: "Franklin Gothic Book", sans-serif;
+      line-height: 18px;
+      text-decoration: none;
+      text-align: center; }
+
+.navigation-menu {
+  width: 100%;
+  display: inline-block; }
+  .navigation-menu .left-side {
+    float: left; }
+  .navigation-menu .rigth-side {
+    float: right;
+    margin-top: -15px; }
+  .navigation-menu .partner {
+    position: relative;
+    display: inline-block;
+    margin-top: 29px;
+    text-align: right;
+    margin-right: 30px;
+    font-size: 11px;
+    color: #343434;
+    line-height: 17px;
+    text-decoration: underline; }
+  .navigation-menu .partner-ico:after {
+    position: absolute;
+    content: ' ';
+    top: 0;
+    left: -20px;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url("../img/icons.png") no-repeat 0 -45px;
+    margin-right: 3px; }
+  .navigation-menu .registration {
+    position: relative;
+    display: inline-block;
+    margin-top: 29px;
+    text-align: right;
+    font-size: 11px;
+    color: #343434;
+    line-height: 17px;
+    text-decoration: underline; }
+  .navigation-menu .registration-ico:after {
+    position: absolute;
+    content: ' ';
+    top: 0;
+    left: -20px;
+    display: inline-block;
+    width: 16px;
+    height: 17px;
+    background: url(../img/icons.png) no-repeat -156px -93px;
+    margin: 0 4px 0 0;
+    vertical-align: bottom; }
+  .navigation-menu ul {
+    list-style: none;
+    padding: 0; }
+    .navigation-menu ul > .active > a {
+      border-bottom: 3px solid #B31D27;
+      background-color: #fff;
+      background-image: linear-gradient(to bottom, #f4f4f4, #ffffff);
+      background-repeat: repeat-x; }
+    .navigation-menu ul li {
+      float: left;
+      position: relative;
+      margin-bottom: 11px;
+      padding: 0 1px;
+      z-index: auto; }
+      .navigation-menu ul li:hover > a {
+        border-bottom: 3px solid #B31D27;
+        background-color: #fff;
+        background-image: linear-gradient(to bottom, #f4f4f4, #ffffff);
+        background-repeat: repeat-x; }
+      .navigation-menu ul li:hover .dropmenu {
+        padding: 15px;
+        border: 1px solid #babdc9;
+        visibility: visible;
+        opacity: 1;
+        left: 0; }
+        .navigation-menu ul li:hover .dropmenu.large {
+          width: 920px; }
+        .navigation-menu ul li:hover .dropmenu .colum {
+          float: left;
+          width: 285px;
+          margin: 0 20px 5px 0; }
+          .navigation-menu ul li:hover .dropmenu .colum .title {
+            padding: 0;
+            font-family: Tahoma, sans-serif;
+            font-size: 18px;
+            border-bottom: 1px solid #f1f2f4;
+            color: #354f71;
+            text-align: left;
+            margin-left: 9px;
+            padding-bottom: 15px;
+            margin-bottom: 10px; }
+          .navigation-menu ul li:hover .dropmenu .colum.all-products {
+            margin-top: -30px;
+            margin-left: 29px;
+            width: 550px;
+            text-align: left;
+            color: #354f71;
+            border-top: 1px solid #f1f2f4;
+            padding: 10px 0; }
+            .navigation-menu ul li:hover .dropmenu .colum.all-products a {
+              padding: 0;
+              position: relative;
+              display: inline-block;
+              font-size: 14px;
+              font-family: 'Tahoma', sans-serif;
+              line-height: 16px;
+              background-color: transparent; }
+              .navigation-menu ul li:hover .dropmenu .colum.all-products a:before {
+                content: '';
+                display: inline-block;
+                position: absolute;
+                border-bottom: 1px solid #354f71;
+                width: 100%;
+                height: 100%;
+                bottom: -1px; }
+          .navigation-menu ul li:hover .dropmenu .colum a {
+            font-size: 11px;
+            white-space: nowrap;
+            color: #8a9bb2; }
+            .navigation-menu ul li:hover .dropmenu .colum a span {
+              font-size: 14px;
+              line-height: 14px;
+              display: block;
+              white-space: nowrap;
+              color: #354f71; }
+        .navigation-menu ul li:hover .dropmenu a {
+          padding: 9px 10px;
+          text-decoration: none;
+          font-size: 14px;
+          line-height: 14px;
+          display: block;
+          white-space: nowrap;
+          color: #354f71; }
+          .navigation-menu ul li:hover .dropmenu a:hover {
+            background-color: #f2f3f5; }
+      .navigation-menu ul li .dropmenu {
+        visibility: hidden;
+        position: absolute;
+        left: 0;
+        opacity: 0;
+        top: 32px;
+        left: 0;
+        -webkit-transition: 0.25s linear opacity;
+        z-index: 100;
+        background-color: white; }
+      .navigation-menu ul li > a {
+        padding: 11px 21px 11px 23px;
+        text-decoration: none;
+        color: #343434;
+        font-size: 14px;
+        border-bottom: 3px solid #afb2c1;
+        background-image: linear-gradient(to bottom, #f4f4f4, #edeeee);
+        background-repeat: repeat-x; }
+
+.icon, .tl-hotel::before, .tl-reputation::before, .tl-express::before, .tl-webpms::before, .tl-channel-manager::before, .tl-site::before, .tl-start::before, .tl-mobile::before, .tl-analytics::before, .tl-audit::before, .tl-support::before, .tl-ivisa::before, .tl-rate-shopper::before, .webpms::before, .reputation::before {
+  content: ' ';
+  width: 33px;
+  height: 30px;
+  display: block;
+  margin-right: 10px;
+  background: url(../img/icons-menu_new.png) no-repeat 0 0;
+  float: left; }
+
+.tl-reputation::before {
+  background-position: 0 -408px; }
+
+.tl-express::before {
+  background-position: 0 -442px; }
+
+.tl-webpms::before {
+  background-position: 0 -370px; }
+
+.tl-channel-manager::before {
+  background-position: 0 -30px; }
+
+.tl-site::before {
+  background-position: 0 -60px; }
+
+.tl-start::before {
+  background-position: 0 -90px; }
+
+.tl-mobile::before {
+  background-position: 0 -120px; }
+
+.tl-analytics::before {
+  background-position: 0 -150px; }
+
+.tl-audit::before {
+  background-position: 0 -180px; }
+
+.tl-support::before {
+  background-position: 0 -210px; }
+
+.tl-channel-manager::before {
+  background-position: 0 -240px; }
+
+.tl-ivisa::before {
+  background-position: 0 -270px; }
+
+.tl-rate-shopper::before {
+  background-position: 0 -304px; }
+
+.webpms::before {
+  background-position: 0 -338px; }
+
+.reputation::before {
+  background-position: 0 -374px; }
+
+.header-blog {
+  position: relative;
+  min-width: 980px;
+  min-height: 180px;
+  background: #171e64 url("//blog.dev2.travelline.ru/wp-content/themes/travelline/ifeature/images/blog-header.jpg") 50% 0 no-repeat;
+  color: white; }
+  .header-blog h1 {
+    width: 942px;
+    margin: 21px auto 0;
+    font: 60px 'Franklin Gothic', sans-serif; }
+
+.link {
+  width: 980px;
+  margin: 0px auto;
+  padding-top: 10px;
+  font-size: 11px; }
+  .link > a {
+    margin-left: 20px;
+    color: #a8c5ff; }
+  .link > span {
+    color: #d3e1ff; }
+
+nav {
+  padding-top: 22px;
+  width: 943px;
+  margin: 0 auto 5px; }
+  nav ul {
+    margin-left: 0;
+    padding: 0;
+    list-style: none; }
+    nav ul > li {
+      padding-bottom: 9px;
+      line-height: 20px;
+      float: left; }
+      nav ul > li.active > a {
+        border-top: 3px solid #bd0726;
+        font-weight: bold;
+        border-bottom: 4px solid white;
+        background-color: white; }
+      nav ul > li > a {
+        margin-right: 4px;
+        border-radius: 4px 4px 0 0;
+        text-decoration: none;
+        background: #eff0f2;
+        padding: 11px 14px 11px;
+        border: 1px solid transparent;
+        color: #555; }
+        nav ul > li > a:hover {
+          border-top: 3px solid #bd0726;
+          border-bottom: 5px solid white;
+          background-color: white; }
+
+a:hover {
+  text-decoration: none;
+  color: #5ca9d6; }
+
+.text {
+  font-size: 11px; }
+
+main {
+  position: relative;
+  margin: 0 auto;
+  width: 980px; }
+
+.content {
+  margin-top: 32px;
+  width: 733px;
+  float: left; }
+  .content > .item {
+    margin-bottom: 20px;
+    padding: 10px 15px 20px; }
+    .content > .item .image {
+      position: relative;
+      width: 694px;
+      max-width: 100%;
+      margin-bottom: 20px; }
+      .content > .item .image .link {
+        position: absolute;
+        width: 100%;
+        height: 100%; }
+      .content > .item .image header {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.33) 0%, rgba(0, 0, 0, 0.94) 100%);
+        color: white; }
+      .content > .item .image .info-created {
+        margin: 0 0 12px 30px;
+        color: #989898;
+        font-size: 12px; }
+        .content > .item .image .info-created > span {
+          margin-left: 20px; }
+        .content > .item .image .info-created a {
+          text-decoration: none;
+          color: #989898; }
+          .content > .item .image .info-created a:hover {
+            color: white; }
+
+.author-icon:before {
+  content: '';
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background: url("../img/icons.png") no-repeat 0 -45px;
+  margin: 0 7px -4px 0; }
+
+.tag-icon:before {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 13px;
+  background: url("../img/icons.png") no-repeat -88px -103px;
+  margin: 0 7px -4px 0; }
+
+article {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 14px; }
+  article > h2 {
+    font: 20px Tahoma, Verdana, Arial, sans-serif;
+    margin: 5px 0px 15px 0px;
+    color: #323232; }
+  article span {
+    font-weight: 400;
+    line-height: 160%; }
+
+.tags span {
+  vertical-align: baseline; }
+
+.tags-icon {
+  display: inline-block;
+  width: 23px;
+  height: 13px;
+  background: url("../img/icons.png") no-repeat -47px -103px;
+  margin: 0 7px -2px 0; }
+
+.footer-item {
+  font-size: 12px; }
+
+.aside {
+  margin-top: 42px;
+  float: right;
+  width: 224px; }
+
+.widget {
+  margin-bottom: 20px;
+  background: #eff0f2 url(../img/widget-bg.png);
+  font: 12px 'Tahoma', sans-serif; }
+  .widget-title {
+    font: 17px 'Franklin Gothic', sans-serif;
+    color: #354f71;
+    margin: 0; }
+  .widget-ul {
+    padding: 0; }
+  .widget-li {
+    list-style: none;
+    margin-bottom: 20px; }
+  .widget a {
+    color: #354f71; }
+
+.widget-subscription {
+  border: 8px solid #eff0f2;
+  padding: 15px 12px 10px 12px; }
+  .widget-subscription__input {
+    height: 30px;
+    width: 166px;
+    border-radius: 4px;
+    margin: 15px 0 0;
+    padding: 0 8px;
+    box-shadow: inset 0 1px 4px 0 #eee; }
+  .widget-subscription__description {
+    font-size: 11px;
+    color: #768fa5;
+    font-style: italic;
+    margin: 0;
+    margin-top: 6px; }
+  .widget-subscription__button {
+    background-color: #4a68ac;
+    background-image: linear-gradient(to bottom, #5574b8, #3c589d);
+    color: #fff;
+    line-height: 30px;
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #6c8cd1;
+    margin: 10px 0;
+    box-shadow: 0 1px 2px 0px rgba(166, 166, 166, 0.5); }
+    .widget-subscription__button:hover {
+      background-color: #5579c4;
+      background-image: linear-gradient(to bottom, #6488d1, #4667b6); }
+
+.widget-facebook {
+  height: 230px; }
+
+.widget-search {
+  padding: 26px 20px; }
+
+.widget-search-form > label {
+  width: 145px; }
+
+.widget-search-form__input {
+  width: 120px;
+  height: 30px;
+  border-radius: 4px;
+  padding: 0 8px;
+  box-shadow: inset 0 1px 4px 0 #eee; }
+
+.widget-search-form__button {
+  background: url(../img/search-button.png);
+  width: 30px;
+  height: 32px;
+  float: right;
+  color: transparent; }
+
+.widget-popular-record {
+  padding: 26px 20px; }
+  .widget-popular-record__data {
+    color: #fff;
+    font-size: 11px;
+    background: #718f9f;
+    padding: 3px 4px;
+    font-weight: normal; }
+  .widget-popular-record__title {
+    line-height: 15px;
+    display: block;
+    margin: 10px 0; }
+
+.comment {
+  margin-top: 10px;
+  float: right;
+  background: #768FA5;
+  position: relative;
+  padding: 0 5px;
+  font-size: 12px;
+  line-height: 16px;
+  border-radius: 20px; }
+
+.comment-icon {
+  text-decoration: none;
+  color: white; }
+  .comment-icon:after {
+    content: '';
+    display: block;
+    border-left: 9px solid #768FA5;
+    border-bottom: 6px solid transparent;
+    position: absolute;
+    bottom: -4px; }
+
+.title {
+  padding: 15px 30px; }
+  .title a {
+    text-decoration: none;
+    font: 36px 'Franklin Gothic Book', sans-serif;
+    color: white;
+    border-bottom: 1px #fff solid; }
+    .title a:hover {
+      border-bottom: none; }
+
+footer {
+  position: relative;
+  float: left;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  min-height: 150px;
+  color: white; }
+  footer .conteiner {
+    margin: 0 auto;
+    width: 980px; }
+
+.footer-menu {
+  display: flex;
+  padding-top: 20px;
+  height: 100%;
+  background-image: radial-gradient(#1a4988, #013c7b); }
+  .footer-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 30px; }
+    .footer-menu ul li {
+      font: 12px/18px Tahoma, Arial, sans-serif;
+      line-height: 22px; }
+      .footer-menu ul li a {
+        text-decoration: underline;
+        font-size: 11px;
+        color: #a8c5ff;
+        line-height: 16px; }
+  .footer-menu .icon, .footer-menu .tl-hotel::before, .footer-menu .tl-reputation::before, .footer-menu .tl-express::before, .footer-menu .tl-webpms::before, .footer-menu .tl-channel-manager::before, .footer-menu .tl-site::before, .footer-menu .tl-start::before, .footer-menu .tl-mobile::before, .footer-menu .tl-analytics::before, .footer-menu .tl-audit::before, .footer-menu .tl-support::before, .footer-menu .tl-ivisa::before, .footer-menu .tl-rate-shopper::before, .footer-menu .webpms::before, .footer-menu .reputation::before {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .footer-menu .contact {
+    margin-top: 10px;
+    color: #a8c5ff; }
+    .footer-menu .contact li {
+      position: relative;
+      padding-left: 35px;
+      margin-bottom: 20px; }
+  .footer-menu .phone {
+    background: url(../img/icons.png) no-repeat -200px -50px; }
+  .footer-menu .email {
+    background: url(../img/icons.png) no-repeat -150px -50px; }
+  .footer-menu .partner {
+    background: url(../img/icons.png) no-repeat -200px 0; }
+  .footer-menu .tel {
+    padding: 0;
+    font-size: 18px;
+    color: #FFF;
+    line-height: 24px; }
+
+.footer-info {
+  display: flex;
+  background: url("../img/footer-bg.png");
+  padding: 20px; }
+  .footer-info .rightside {
+    float: right;
+    margin-right: 20px; }
+
+.colum {
+  float: left;
+  width: 220px;
+  margin-left: 20px; }
+
+.footer-copy {
+  padding-top: 5px;
+  font-size: 11px;
+  color: #4858a8; }
+
+.social-button a {
+  margin: 5px 8px 0 0; }
+
+.colum_title {
+  font-family: "Franklin Gothic Book", sans-serif;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  margin-bottom: 8px; }
+
+.colum_list ul {
+  list-style: none; }
+
+.colum_list a {
+  color: white; }
+
+.footer-logo {
+  background: url(../img/footer-logo.png);
+  width: 143px;
+  height: 23px; }
+
+.social-button {
+  float: left;
+  display: inline-flex; }
+  .social-button a {
+    width: 26px;
+    height: 26px;
+    display: block;
+    background: url(../img/socialnetwork_new.png) no-repeat 0 0; }
+  .social-button .button-fb a {
+    background-position: 0 0; }
+  .social-button .button-vk {
+    background-position: -68px 0; }
+  .social-button .button-youtube {
+    background-position: -204px 0; }
+  .social-button .button-instagram {
+    background-position: -238px 0; }
+  .social-button .button-sd {
+    background-position: -341px 0; }
+
+.logo-windows {
+  float: right; }
+
+.footer-win-text {
+  float: right;
+  margin: 12px 15px 0 0;
+  font-size: 11px;
+  line-height: 17px;
+  text-align: right;
+  color: #3665aa; }
+  .footer-win-text span {
+    color: #81afe2; }
+
+.footer-win-img {
+  float: right;
+  background: url(../img/windows.png);
+  width: 57px;
+  height: 72px; }
+
+input {
+  border: 1px solid #ccc; }

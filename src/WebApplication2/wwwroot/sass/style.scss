@@ -634,6 +634,19 @@ article {
         color: #354f71;
         margin: 0;
     }
+
+    &-ul {
+        padding: 0;
+    }
+
+    &-li {
+        list-style: none;
+        margin-bottom: 20px;
+    }
+
+    a {
+        color: #354f71;
+    }
 }
 
 .widget-subscription {
@@ -707,6 +720,7 @@ article {
     }
 }
 
+
 .widget-popular-record {
     padding: 26px 20px;
 
@@ -722,19 +736,6 @@ article {
         line-height: 15px;
         display: block;
         margin: 10px 0;
-    }
-
-    ul {
-        padding: 0;
-    }
-
-    li {
-        list-style: none;
-        margin-bottom: 20px;
-    }
-
-    a {
-        color: #354f71;
     }
 }
 
