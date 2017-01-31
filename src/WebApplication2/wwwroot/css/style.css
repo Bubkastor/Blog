@@ -516,7 +516,7 @@ article {
 .widget-popular-record {
   padding: 26px 20px; }
   .widget-popular-record__data {
-    color: #fff;
+    color: white;
     font-size: 11px;
     background: #718f9f;
     padding: 3px 4px;
