@@ -460,8 +460,8 @@ body {
     color: #555;
     font-size: 11px; }
     .header-blog-li > a:hover {
-      text-decoration: none;
       color: #5ca9d6;
+      text-decoration: none;
       border-top: 3px solid #bd0726;
       border-bottom: 5px solid white;
       background-color: white; }
@@ -499,7 +499,8 @@ main {
         .content > .item .image .info-created > span {
           margin-left: 20px; }
         .content > .item .image .info-created a {
-          text-decoration: none; }
+          text-decoration: none;
+          color: #858585; }
           .content > .item .image .info-created a:hover {
             color: white; }
 
@@ -529,9 +530,17 @@ article {
   article span {
     font-weight: 400;
     line-height: 160%; }
+  article a {
+    color: #354f71; }
 
 .tags span {
   vertical-align: baseline; }
+
+.tags a {
+  color: #354f71;
+  text-decoration: underline; }
+  .tags a:hover {
+    color: #5ca9d6; }
 
 .tags-icon {
   display: inline-block;
@@ -542,6 +551,13 @@ article {
 
 .footer-item {
   font-size: 12px; }
+  .footer-item:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .footer-item:before {
+    content: "";
+    display: table; }
 
 .aside {
   margin: 8px -3px 0 0;

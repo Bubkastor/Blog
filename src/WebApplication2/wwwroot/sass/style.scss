@@ -559,8 +559,8 @@ body {
         font-size: 11px;
 
         &:hover {
-            text-decoration: none;
             color: $a__color;
+            text-decoration: none;
             border-top: 3px solid $colorBorderTop;
             border-bottom: 5px solid white;
             background-color: white;
@@ -614,8 +614,8 @@ main {
 
                 a {
                     text-decoration: none;
-
-                    &:hover {
+                    color: $info-create-a__color;
+                     &:hover {
                         color: $info-created-a-h__color;
                     }
                 }
@@ -660,12 +660,25 @@ article {
         font-weight: 400;
         line-height: 160%;
     }
+
+    a {
+        color: $article-a__color;
+    }
 }
 
 .tags {
 
     span {
         vertical-align: baseline;
+    }
+
+    a {
+        color: #354f71;
+        text-decoration: underline;
+
+        &:hover {
+            color: $a__color;
+        }
     }
 }
 
@@ -679,6 +692,7 @@ article {
 
 .footer-item {
     font-size: 12px;
+    @include clearfix;
 }
 
 .aside {
@@ -811,6 +825,7 @@ article {
     font-size: 12px;
     line-height: 16px;
     border-radius: 20px;
+    
 }
 
 .comment-icon {
