@@ -87,7 +87,7 @@ body {
             opacity: 1;
             font-size: 13px;
 
-            & > .conteiner {
+            & > .container {
                 width: 190px;
                 margin: 10px 15px;
             }
@@ -883,7 +883,7 @@ footer {
     min-height: 150px;
     color: $footer__color;
 
-    .conteiner {
+    .container {
         margin: 0 auto;
         width: $minWidth;
     }
@@ -967,7 +967,7 @@ footer {
     display: flex;
     background: url('../img/footer-bg.png');
     padding: 20px;
-
+    @include clearfix;
     .rightside {
         float: right;
         margin-right: 20px;

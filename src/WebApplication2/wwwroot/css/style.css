@@ -86,7 +86,7 @@ body {
     visibility: visible;
     opacity: 1;
     font-size: 13px; }
-    .head-contact:hover .head-contact_max > .conteiner {
+    .head-contact:hover .head-contact_max > .container {
       width: 190px;
       margin: 10px 15px; }
     .head-contact:hover .head-contact_max p {
@@ -698,7 +698,7 @@ footer {
   width: 100%;
   min-height: 150px;
   color: white; }
-  footer .conteiner {
+  footer .container {
     margin: 0 auto;
     width: 980px; }
 
@@ -759,6 +759,13 @@ footer {
   display: flex;
   background: url("../img/footer-bg.png");
   padding: 20px; }
+  .footer-info:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .footer-info:before {
+    content: "";
+    display: table; }
   .footer-info .rightside {
     float: right;
     margin-right: 20px; }
