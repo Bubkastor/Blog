@@ -579,7 +579,7 @@ main {
     width: 733px;
     float: left;
 
-    & > .item {
+        .item {
         margin-bottom: 20px;
         padding: 10px 15px 20px;
 
@@ -1079,4 +1079,49 @@ footer {
 
 input {
     border: 1px solid $input__border;
+}
+
+
+.pagination {
+    clear: both;
+    padding: 2px 0;
+    position: relative;
+    font-size: 11px;
+    line-height: 13px;
+    margin-bottom: 38px;
+}
+
+.pagination-title {
+    font: 20px Tahoma, Verdana, Arial, sans-serif;
+    margin: 5px 0px 15px 0px;
+    padding: 1px 0;
+    color: #323232;
+}
+
+.page-numbers {
+    display: block;
+    float: left;
+    margin: 2px 2px 2px 0;
+    padding: 6px 9px 5px 9px;
+    text-decoration: none;
+    width: auto;
+    color: #fff;
+    background: #555;
+
+    &:hover {
+        color: #fff;
+        background: #3279BB;
+    }
+}
+
+.current {
+    padding: 6px 9px 5px 9px;
+    background: #3279BB;
+    color: #fff;
+}
+.dots {
+    &:hover {
+        color: #fff;
+        background: #555;
+    }
 }
