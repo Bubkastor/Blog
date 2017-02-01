@@ -11,7 +11,7 @@ body {
 
 .header {
     display: block;
-    background-image: linear-gradient(to bottom, $header-background__color-1, $header-background__color-2);
+    @include background-linear($header-background__color-1, $header-background__color-2);
     background-color: $header-background__color-1;
     background-repeat: repeat-x;
     width: 100%;
@@ -69,7 +69,7 @@ body {
     top: 30px;
     left: -30px;
     opacity: 0;
-    background: linear-gradient(to bottom, $head-contact_max__background-1 0%, $head-contact_max__background-2 100%);
+    @include background-linear($head-contact_max__background-1 0%, $head-contact_max__background-2 100%);
     z-index: 2;
     -webkit-transition: 0.25s linear opacity;
 }
@@ -146,7 +146,7 @@ body {
             .nav-li-link {
                 border-bottom: 3px solid #B31D27;
                 background-color: #fff;
-                background-image: linear-gradient(to bottom, #f4f4f4, #fff);
+                @include background-linear(#f4f4f4, #fff);
                 background-repeat: repeat-x;
             }
         }
@@ -154,12 +154,12 @@ body {
         &_gray {
             padding: 0 1px;
             background: red;
-            background-image: linear-gradient(to bottom, #f4f4f4, #edeeee);
+            @include background-linear(#f4f4f4, #edeeee);
             background-repeat: repeat-x;
         }
 
         .nav-li-link {
-            background-image: linear-gradient(to bottom, #f4f4f4, #edeeee);
+            @include background-linear(#f4f4f4, #edeeee);
             padding: 13px 20px 15px 23px;
             border-bottom: 3px solid #afb2c1;
             text-decoration: none;
@@ -171,7 +171,7 @@ body {
             .nav-li-link {
                 border-bottom: 3px solid #B31D27;
                 background-color: #fff;
-                background-image: linear-gradient(to bottom, #f4f4f4, #ffffff);
+                @include background-linear(#f4f4f4, #ffffff);
                 background-repeat: repeat-x;
             }
 
@@ -599,7 +599,7 @@ main {
                 position: absolute;
                 width: 100%;
                 bottom: 0;
-                background: linear-gradient(to bottom, rgba(0, 0, 0, 0.33) 0%, rgba(0, 0, 0, 0.94) 100%);
+                @include background-linear(rgba(0, 0, 0, 0.33) 0%, rgba(0, 0, 0, 0.94) 100%);
                 color: white;
             }
 
@@ -615,7 +615,8 @@ main {
                 a {
                     text-decoration: none;
                     color: $info-create-a__color;
-                     &:hover {
+
+                    &:hover {
                         color: $info-created-a-h__color;
                     }
                 }
@@ -750,7 +751,7 @@ article {
 
     &__button {
         background-color: $widget-subscription-bottom__background-color;
-        background-image: linear-gradient(to bottom, $widget-subscription-bottom__background-background-image-1, $widget-subscription-bottom__background-background-image-2);
+        @include background-linear($widget-subscription-bottom__background-background-image-1, $widget-subscription-bottom__background-background-image-2);
         color: $widget-subscription-bottom__color;
         line-height: 30px;
         width: 100%;
@@ -763,7 +764,7 @@ article {
 
         &:hover {
             background-color: $widget-subscription-bottom-h__background-color;
-            background-image: linear-gradient(to bottom, $widget-subscription-bottom-h__background-image-1, $widget-subscription-bottom-h__background-image-2);
+            @include background-linear( $widget-subscription-bottom-h__background-image-1, $widget-subscription-bottom-h__background-image-2);
         }
     }
 }
@@ -894,7 +895,7 @@ footer {
     display: flex;
     padding-top: 37px;
     height: 100%;
-    background-image: radial-gradient($footer-menu-background-image__color-1, $footer-menu-background-image__color-2);
+    @include background-radial($footer-menu-background-image__color-1, $footer-menu-background-image__color-2);
 
 
     ul {
