@@ -843,7 +843,7 @@ footer {
     height: 26px;
     display: block;
     background: url(../img/socialnetwork_new.png) no-repeat 0 0; }
-  .social-button .button-fb a {
+  .social-button .button-fb {
     background-position: 0 0; }
   .social-button .button-vk {
     background-position: -68px 0; }
