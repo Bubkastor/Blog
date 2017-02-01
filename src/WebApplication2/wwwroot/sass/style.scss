@@ -132,7 +132,7 @@ body {
 .nav {
     list-style: none;
     padding: 0;
-    margin: 10px 0 0 0;
+    margin: 10px 0 0 -1px;
     @include clearfix;
 
     &-li {
@@ -204,11 +204,10 @@ body {
 
 .all-products {
     position: absolute;
-    margin-top: -30px;
-    margin-left: 29px;
+    bottom: 20px;
+    left: 29px;
     width: 550px;
     text-align: left;
-    color: #354f71;
     border-top: 1px solid #f1f2f4;
     padding: 10px 0;
 
@@ -220,8 +219,10 @@ body {
         font-family: 'Tahoma', sans-serif;
         line-height: 16px;
         background-color: transparent;
+        text-decoration: none;
 
-        &:before {
+        color: #354f71;
+         &:before {
             content: '';
             display: inline-block;
             position: absolute;
@@ -245,10 +246,10 @@ body {
 }
 
 .dropmenu-colum__title {
-    float: left;
     padding: 0;
     font-family: Tahoma, sans-serif;
     font-size: 18px;
+    line-height: 18px;
     border-bottom: 1px solid #f1f2f4;
     color: #354f71;
     text-align: left;
@@ -258,16 +259,25 @@ body {
 }
 
 .dropmenu-colum__ul {
-    padding: 0;
+    padding: 0;    
 }
 
 .dropmenu-colum_a {
+    display: block;
+    margin-left: -4px;
+    height: 33px;
     font-size: 11px;
-    white-space: nowrap;
     color: #8a9bb2;
+    padding: 9px 10px;
+    text-decoration: none;
 
     &:hover {
         background-color: #f2f3f5;
+    }
+
+    > span {
+        color: #354f71;
+        font-size: 14px;
     }
 }
 
