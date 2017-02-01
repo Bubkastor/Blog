@@ -638,7 +638,8 @@ article {
   height: 32px;
   float: right;
   color: transparent;
-  border: 0; }
+  border: 0;
+  cursor: pointer; }
 
 .widget-popular-record-title {
   margin-bottom: 10px;
