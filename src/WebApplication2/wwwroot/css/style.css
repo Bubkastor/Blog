@@ -589,6 +589,7 @@ article {
     border-radius: 4px;
     margin: 15px 0 0;
     padding: 0 8px;
+    font-size: 14px;
     box-shadow: inset 0 1px 4px 0 #eee; }
   .widget-subscription__description {
     font-size: 11px;
@@ -606,7 +607,8 @@ article {
     border-radius: 4px;
     border: 1px solid #6c8cd1;
     margin: 10px 0;
-    box-shadow: 0 1px 2px 0 #a6a6a6; }
+    box-shadow: 0 1px 2px 0 #a6a6a6;
+    cursor: pointer; }
     .widget-subscription__button:hover {
       background-color: #5579c4;
       background-image: linear-gradient(to bottom, #6488d1, #4667b6); }
@@ -616,6 +618,9 @@ article {
 
 .widget-search {
   padding: 26px 20px; }
+  .widget-search-title {
+    margin-bottom: 10px;
+    margin-left: 5px; }
 
 .widget-search-form > label {
   width: 145px; }
@@ -632,7 +637,12 @@ article {
   width: 30px;
   height: 32px;
   float: right;
-  color: transparent; }
+  color: transparent;
+  border: 0; }
+
+.widget-popular-record-title {
+  margin-bottom: 10px;
+  margin-left: 5px; }
 
 .widget-popular-record {
   padding: 26px 20px; }
@@ -646,6 +656,8 @@ article {
     line-height: 15px;
     display: block;
     margin: 10px 0; }
+    .widget-popular-record__title a:hover {
+      color: #5ca9d6; }
 
 .comment {
   margin-top: 10px;
@@ -692,14 +704,14 @@ footer {
 
 .footer-menu {
   display: flex;
-  padding-top: 20px;
+  padding-top: 37px;
   height: 100%;
   background-image: radial-gradient(#1a4988, #013c7b); }
   .footer-menu ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    margin-bottom: 30px; }
+    margin-bottom: 29px; }
     .footer-menu ul li {
       font: 12px/18px Tahoma, Arial, sans-serif;
       line-height: 22px; }
@@ -708,24 +720,34 @@ footer {
         font-size: 11px;
         color: #a8c5ff;
         line-height: 16px; }
-  .footer-menu .icon, .footer-menu .tl-hotel::before, .footer-menu .tl-reputation::before, .footer-menu .tl-express::before, .footer-menu .tl-webpms::before, .footer-menu .tl-channel-manager::before, .footer-menu .tl-site::before, .footer-menu .tl-start::before, .footer-menu .tl-mobile::before, .footer-menu .tl-analytics::before, .footer-menu .tl-audit::before, .footer-menu .tl-support::before, .footer-menu .tl-ivisa::before, .footer-menu .tl-rate-shopper::before, .footer-menu .webpms::before, .footer-menu .reputation::before {
-    width: 26px;
-    height: 26px;
-    position: absolute;
-    top: 0;
-    left: 0; }
   .footer-menu .contact {
     margin-top: 10px;
     color: #a8c5ff; }
     .footer-menu .contact li {
       position: relative;
       padding-left: 35px;
+      padding-top: 4px;
       margin-bottom: 20px; }
-  .footer-menu .phone {
+  .footer-menu .contact-phone-icon {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 7px;
+    left: 0;
     background: url(../img/icons.png) no-repeat -200px -50px; }
-  .footer-menu .email {
+  .footer-menu .contact-email-icon {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 0;
+    left: 0;
     background: url(../img/icons.png) no-repeat -150px -50px; }
-  .footer-menu .partner {
+  .footer-menu .contact-partner-icon {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 0;
+    left: 0;
     background: url(../img/icons.png) no-repeat -200px 0; }
   .footer-menu .tel {
     padding: 0;
@@ -762,7 +784,7 @@ footer {
   display: inline-block;
   *display: inline;
   *zoom: 1;
-  margin-bottom: 8px; }
+  margin-bottom: 6px; }
 
 .colum_list ul {
   list-style: none; }
