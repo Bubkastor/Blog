@@ -896,6 +896,7 @@ footer {
 .footer-menu {
     display: flex;
     padding-top: 37px;
+    padding-bottom: 1px;
     height: 100%;
     @include background-radial($footer-menu-background-image__color-1, $footer-menu-background-image__color-2);
 
@@ -918,63 +919,61 @@ footer {
             }
         }
     }
+}
+.contact-phone-icon {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    background: url(../img/icons.png) no-repeat -200px -50px;
+}
 
+.contact-email-icon {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../img/icons.png) no-repeat -150px -50px;
+}
 
-    .contact {
-        margin-top: 10px;
-        color: $footer-menu-contact__color;
+.contact-partner-icon {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../img/icons.png) no-repeat -200px 0;
+}
 
-        li {
-            position: relative;
-            padding-left: 35px;
-            padding-top: 4px;
-            margin-bottom: 20px;            
-        }
-    }
+.tel {
+    padding: 0;
+    font-size: 18px;
+    color: $footer-menu-tel__color;
+    line-height: 24px;
+}
 
-    .contact-phone-icon {
-        width: 26px;
-        height: 26px;
-        position: absolute;
-        top: 7px;
-        left: 0;
-        background: url(../img/icons.png) no-repeat -200px -50px;
-    }
-
-    .contact-email-icon {
-        width: 26px;
-        height: 26px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: url(../img/icons.png) no-repeat -150px -50px;
-    }
-
-    .contact-partner-icon {
-        width: 26px;
-        height: 26px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: url(../img/icons.png) no-repeat -200px 0;
-    }
-
-    .tel {
-        padding: 0;
-        font-size: 18px;
-        color: $footer-menu-tel__color;
-        line-height: 24px;
-    }
+.contact-ul {
+    margin-top: 10px;
+    color: $footer-menu-contact__color;
+}
+.contact-li {
+    position: relative;
+    padding-left: 35px;
+    padding-top: 5px;
+    margin-bottom: 20px;
 }
 
 .footer-info {
     display: flex;
     background: url('../img/footer-bg.png');
-    padding: 20px;
+    padding: 20px 0 30px 0;
     @include clearfix;
+
     .rightside {
         float: right;
-        margin-right: 20px;
+        margin-right: 22px;
     }
 }
 
@@ -985,7 +984,7 @@ footer {
 }
 
 .footer-copy {
-    padding-top: 5px;
+    padding-top: 7px;
     font-size: 11px;
     color: $footer-copy;
 }
@@ -1061,7 +1060,7 @@ footer {
 
 .footer-win-text {
     float: right;
-    margin: 12px 15px 0 0;
+    margin: 12px 12px 0 0;
     font-size: 11px;
     line-height: 17px;
     text-align: right;
@@ -1069,6 +1068,7 @@ footer {
 
     span {
         color: $footer-win-text-span__color;
+        margin-right: 3px;
     }
 }
 
