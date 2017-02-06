@@ -15,7 +15,7 @@ body {
     background-color: $header-background__color-1;
     background-repeat: repeat-x;
     width: 100%;
-    margin-top: 33px;
+    padding-top: 33px;
 
     &-row {
         width: $minWidth;
@@ -523,10 +523,11 @@ body {
     padding-top: 10px;
     width: 943px;
     margin: 0 auto 5px;
-    @include clearfix;
+    
 }
 
 .header-blog-ul {
+    @include clearfix;
     margin-left: 0;
     padding: 0;
     margin-left: -1px;
@@ -573,6 +574,7 @@ main {
     position: relative;
     margin: 32px auto;
     width: 980px;
+    @include clearfix;
 }
 
 .content {
@@ -783,12 +785,12 @@ article {
 }
 
 .widget-search-form {
-    > label {
+    &__label {
         width: 145px;
     }
 
 
-    &__input {
+    &__label-input {
         width: 120px;
         height: 30px;
         border-radius: 4px;
@@ -1093,7 +1095,7 @@ input {
 
 .pagination-title {
     font: 20px Tahoma, Verdana, Arial, sans-serif;
-    margin: 5px 0px 15px 0px;
+    margin: 5px 0 15px 0;
     padding: 1px 0;
     color: #323232;
 }
@@ -1116,7 +1118,7 @@ input {
 
 .current {
     padding: 6px 9px 5px 9px;
-    background: #3279BB;
+    background: #3279bb;
     color: #fff;
 }
 .dots {
